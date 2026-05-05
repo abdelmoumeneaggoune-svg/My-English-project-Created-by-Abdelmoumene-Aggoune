@@ -184,11 +184,11 @@
         display: inline-block;
         height: 25vw;
         vertical-align: middle;
-        scale: 0.4;
+        scale: 0.5;
     }
     
     #para {
         font-size: 2vw;
         font-weight: bolder;
-        margin-left: 4vw;
+        margin-left: 3vw;
     }
