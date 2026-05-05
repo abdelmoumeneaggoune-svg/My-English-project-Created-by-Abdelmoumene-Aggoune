@@ -64,7 +64,7 @@
     
     .sec {
         border-left: none;
-        padding-bottom: 15vh;
+        padding-top: 15vh;
     }
     
     .so {
@@ -81,7 +81,7 @@
         border-left: solid 10px #bd8600;
         border-radius: 10px;
         padding-left: 10px;
-        padding-bottom: 15vh;
+        padding-top: 15vh;
     }
     
     .btn-clicked {
