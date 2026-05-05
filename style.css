@@ -1,0 +1,190 @@
+    body {
+        display: flex;
+        /* تحويل البودي إلى فليكس */
+        margin: 0;
+        padding-bottom: 15vh;
+        background-color: #0d1117;
+        color: #c9d1d9;
+        min-height: 100vh;
+    }
+    
+    h1 {
+        color: #bd8600;
+    }
+    
+    #nav {
+        position: relative;
+        width: 25vw;
+        height: 100vh;
+        background-color: #161b22;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+        height: 100vh;
+        gap: 5vh;
+    }
+    
+    #div {
+        position: relative;
+        width: 75vw;
+        padding-right: 5vw;
+        padding-left: 5vw;
+        margin-left: 25vw;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    html::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    html::-webkit-scrollbar-track {
+        width: 100%;
+        background-color: #161b22;
+        border-radius: 10px;
+    }
+    
+    html::-webkit-scrollbar-thumb {
+        width: 100%;
+        background-color: #bd8600;
+        height: 5vh;
+        border-radius: 10px;
+    }
+    
+    div {
+        font-size: 20px;
+        font-family: Andalus;
+    }
+    
+    .sec {
+        border-left: none;
+    }
+    
+    .so {
+        border-left: none;
+        /* ربط الحركة التي صممناها */
+        animation: reveal-animation linear both;
+        /* تحديد أن الحركة مرتبطة بظهور العنصر في الشاشة */
+        animation-timeline: view();
+        /* جعل الحركة تبدأ عندما يدخل العنصر لأسفل الشاشة وتنتهي عندما يصل للمنتصف */
+        animation-range: entry 5% cover 50%;
+    }
+    
+    .section {
+        border-left: solid 10px #bd8600;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+    
+    .btn-clicked {
+        background-color: #bd8600;
+        scale: 0.9;
+        border-radius: 10px;
+        width: 20vw;
+        height: auto;
+        font-size: 3vw;
+    }
+    
+    .btn-before {
+        background-color: transparent;
+        color: #e3b341;
+        border: #e3b341 solid 2px;
+        border-radius: 10px;
+        width: 20vw;
+        height: auto;
+        font-size: 3vw;
+    }
+    
+    .btn-before:hover {
+        background-color: #e3b341;
+        scale: 0.9;
+        color: black;
+    }
+    
+    .cont {
+        display: flex;
+    }
+    
+    h2 {
+        color: rgb(85, 82, 82);
+    }
+    /* 1. تعريف الحركة: من شفاف ومزاح لأسفل إلى ظاهر وفي مكانه */
+    
+    @keyframes reveal-animation {
+        from {
+            opacity: 0;
+            transform: translateY(50px) scale(0.7);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+    
+    #container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10vw;
+        justify-content: center;
+    }
+    
+    .img1 {
+        scale: 2;
+        transition: 0.5s;
+    }
+    
+    .img1:hover {
+        scale: 1.8;
+        transition: 0.2s;
+        rotate: 360deg;
+        filter: brightness(5px);
+    }
+    
+    .img1:active {
+        filter: drop-shadow(rgb(59, 59, 59) 10px 10px 0.5vw)
+    }
+    
+    input {
+        background-color: #000000;
+        width: 41vw;
+        font-size: 4vh;
+        text-align: center;
+        border-radius: 10vw;
+        scale: 1.5;
+        display: inline-block;
+        align: center;
+    }
+    
+    #like {
+        scale: 1.5;
+        position: absolute;
+        border-radius: 3vw;
+        transform: translateX(-31vw) translateY(0.4vh);
+    }
+    
+    #dislike {
+        scale: 1.5;
+        position: absolute;
+        transform: translateX(-33.5vw) translateY(0.4vh);
+        border-radius: 3vw;
+    }
+    
+    #abd {
+        width: 30vw;
+        display: inline-block;
+        height: 25vw;
+        vertical-align: middle;
+        scale: 0.5;
+    }
+    
+    #para {
+        font-size: 2vw;
+        font-weight: bolder;
+        margin-left: 4vw;
+    }
