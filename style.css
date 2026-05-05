@@ -186,10 +186,12 @@
         vertical-align: middle;
         scale: 0.5;
     }
-    
     #para {
         font-size: 2vw;
         font-weight: bolder;
-        margin-left: 4vw;
-        white-space: nowrap;
+        white-space: nowrap; /* يمنع نزول الصورة مهما حدث */
+        display: flex;       /* يجعلهم في سطر واحد بدقة */
+        align-items: center; /* يضع النص في منتصف طول الصورة */
+        justify-content: flex-start; /* يبدأ من اليسار */
     }
+
