@@ -185,11 +185,11 @@
         height: 25vw;
         vertical-align: middle;
         scale: 0.5;
-        float:left;
     }
     
     #para {
-        font-size: 1.5vw;
+        font-size: 2vw;
         font-weight: bolder;
-        margin-left: 2vw;
+        margin-left: 4vw;
+        white-space: nowrap;
     }
